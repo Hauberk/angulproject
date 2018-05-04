@@ -1,0 +1,54 @@
+<div class="container-fluid">
+            <mat-grid-list cols="3" rowHeight="3:1">
+                    <mat-grid-tile></mat-grid-tile>
+                    <mat-grid-tile>
+                        <h4>Truck Owner Registration</h4>
+                    </mat-grid-tile>
+                    <mat-grid-tile></mat-grid-tile>
+            </mat-grid-list>
+<div class="container">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <form>
+            <div class="gstinput">
+                    <mat-form-field >
+                            <input matInput placeholder="GST #" type="text" >
+                    </mat-form-field>
+            </div>
+            <div class="gstinput">
+                    <mat-form-field >
+                            <input matInput placeholder="PAN Number : " type="text" >
+                    </mat-form-field>
+            </div>
+            <div class="gstinput">
+                    <mat-form-field>
+                            <input matInput placeholder="Bank Account #" type="text" >
+                    </mat-form-field>
+                    <mat-form-field>
+                            <mat-select placeholder="Account Type" type="number">
+                              <mat-option *ngFor="let account of accounts" [value]="account.value">
+                                {{ account.viewValue }}
+                              </mat-option>
+                            </mat-select>
+                    </mat-form-field>
+            </div>
+            <div class="gstinput">
+                    <mat-form-field >
+                            <input matInput placeholder="IFSC Code :" type="text"  >
+                    </mat-form-field>
+            </div>
+            <div class="gstinput">
+                    <mat-form-field >
+                            <input matInput placeholder="Beneficiary Name :"  >
+                    </mat-form-field>
+            </div>
+            <div class="buttond">
+                <button mat-raised-button routerLink="/addtruck/33" type="button">NEXT</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+
+</div>
+

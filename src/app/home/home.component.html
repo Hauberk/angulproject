@@ -1,0 +1,71 @@
+<div class="container-fluid">
+<div class="container">
+<mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile>
+    
+        
+          <h4>Generic Registration</h4>
+        
+  </mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
+</div>
+<div class="container">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <form>
+      <div  class="fname" >
+        <mat-form-field >
+            <input matInput placeholder="First Name" type="text" name="fname">
+            
+          </mat-form-field>
+          <mat-form-field >
+              <input matInput placeholder="Last Name" type="text" name="lname">
+            </mat-form-field>
+        </div>
+        <div class="dob">
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Choose a date" type="text" name="dob" >
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="phno">
+              <mat-form-field>
+                  <input matInput placeholder="Alternative Number" type="number" name="phno">
+                </mat-form-field>
+          </div>
+          <div class="phno">
+              <mat-form-field>
+                  <input matInput placeholder="Email" type="email" name="email">
+                </mat-form-field>
+          </div>
+          <div class="phno">
+              <h5>Role&nbsp;&nbsp;: </h5>
+          </div>
+          
+              <div class="rad">
+                  
+                <mat-radio-group class="example-radio-group" [(ngModel)]="choose">
+                    <mat-radio-button class="example-radio-button" *ngFor="let choice of choices" [value]="choice"
+                    name="rdbutton"
+                    >
+                      <h5>{{choice}}</h5>
+                    </mat-radio-button>
+                  </mat-radio-group>
+                  <div class="example-selected-value">You Chose: {{choose}}</div>
+          </div>
+          <div class="sbbut">
+
+              <button mat-raised-button routerLink="gregistration/48" type="button" (click)='OnClick()'>NEXT</button>
+          </div>
+    </form>
+  </div>
+  <div class="col-sm-2"></div>
+  
+
+
+
+</div>
+</div>

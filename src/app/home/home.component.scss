@@ -1,0 +1,96 @@
+.container-fluid
+{
+    color: black;
+    background: whitesmoke;
+    padding:1px;
+    top:0;
+}
+
+h6
+{
+  color:white;
+}
+.col-sm-8
+{
+    border:3px solid whitesmoke;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.fname
+{
+    display:block;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.dob
+{
+    display:block;
+    width:100%;
+    float:left;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.phno
+{
+    display:block;
+    float:left;
+    width:100%; 
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.input
+{
+    color:red;
+}
+.rad
+{
+    
+    float:left;
+    width:100%; 
+    padding-right: 2px;
+    padding-left: 15px;
+
+}
+h5
+{
+    
+    color:#404040;
+    
+}
+.sbbut
+{
+    display:block;
+    float:right;
+    padding-right: 2px;
+    padding-left: 15px; 
+    color:black;
+    margin-bottom: 20px;
+}
+.foot
+{
+    display:block;
+    float:left;
+    width:100%; 
+    padding:50px;
+    text-align:center;
+    height: 150px;
+    background-color: tomato;
+
+}
+.label
+{
+    font-weight: normal;
+}
+.example-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  
+  .example-selected-value {
+    margin: 15px 0;
+  }

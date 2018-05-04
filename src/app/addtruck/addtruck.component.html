@@ -1,0 +1,122 @@
+<div class="container-fluid">
+    <mat-grid-list cols="3" rowHeight="3:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>
+                <h4>Add Truck</h4>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+    </mat-grid-list>
+<div class="container">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+  
+<form>
+    <div class="bbord">
+    <div class="gstinput">
+        <mat-form-field >
+            <input matInput placeholder="Truck No." type="text" name="tno">
+            
+          </mat-form-field>
+          <mat-form-field >
+              <mat-select placeholder="Truck Type" type="text">
+                  <mat-option *ngFor="let type of types" [value]="type.value">
+                    {{ type.viewValue }}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+    </div>
+    <div class="gstinput">
+            <mat-form-field >
+                    <input matInput placeholder="Truck Alias Name : " type="text" >
+            </mat-form-field>
+    </div>
+    <div class="gstinput">
+        <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Insurance Expires On: " type="text" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+            
+    </div>
+    <div class="gstinput">
+            <mat-form-field>
+            <input matInput [matDatepicker]="picker1" placeholder="Fitness Valid Till: " type="text" >
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    </div>
+    <div class="gstinput">
+        
+    <mat-form-field>
+        
+        <mat-select placeholder="Permit *" [formControl]="permits" multiple>
+          <mat-option *ngFor="let permit of permitList" [value]="permit">{{permit}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+<!-- With Border-->
+<div class="bbord">
+
+
+    <div class="buttonseq">
+        <div class="col-sm-6">
+      <h5>1.&nbsp;Truck RC *</h5>
+      </div>
+      <div class="col-sm-6">
+      <button mat-raised-button type="button"><h5>ADD</h5> </button>
+    </div>
+      </div>
+    
+    <div class="buttonseq">
+        <div class="col-sm-6">
+        <h5>2.&nbsp;Truck Fitness Certificate</h5>
+      </div>
+        <div class="col-sm-6">
+        <button mat-raised-button type="button"><h5>ADD</h5> </button>
+      </div>
+      </div>
+      <div class="buttonseq">
+          <div class="col-sm-6">
+          <h5>3.&nbsp;Permit</h5>
+        </div>
+          <div class="col-sm-6">
+          <button mat-raised-button type="button"><h5>ADD</h5> </button>
+        </div>
+        </div>
+        <div class="buttonseq">
+            <div class="col-sm-6">
+            <h5>4.&nbsp;Insurance</h5>
+          </div>
+          <div class="col-sm-6">
+            <button mat-raised-button type="button"><h5>ADD</h5> </button>
+          </div>
+          </div>
+          <div class="buttonseq">
+              <button mat-raised-button type="button"><h5>UPLOAD</h5> </button>
+          </div>
+
+        </div>
+        
+        <!-- Border Closing -->
+    <div class="sbbut">
+      <div class="col-sm-3">
+          <button mat-raised-button type="button" >Save</button>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+          <button mat-raised-button type="button" >Add More Truck(s)</button>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+          <button mat-raised-button type="button" >Submit</button>
+      </div>
+    </div>
+</form>
+</div>
+<div class="col-sm-2"></div>
+</div>
+
+</div>
+
